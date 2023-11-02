@@ -63,6 +63,7 @@ function Dashboard() {
   };
 
   const getStats = async (lat, lon) => {
+    setShowMore(false);
     // *** current weather
     await getCurrentWeather(lat, lon)
       .then((res) => {
